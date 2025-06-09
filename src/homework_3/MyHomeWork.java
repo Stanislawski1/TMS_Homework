@@ -1,21 +1,24 @@
 package homework_3;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class MyHomeWork {
     public static void main(String[] args) {
-    taskOne();
-    taskTwo();
-    taskThree();
-    taskFour();
-    taskFive();
-    taskSix();
-
-
-
+        taskOne();
+        taskTwo();
+        taskThree();
+        taskFour();
+        taskFive();
+        loopOne();
+        loopTwo();
+        loopThree();
+        loopFour();
+        loopFive();
     }
 
-    public static void taskOne(){
+
+    public static void taskOne() {
         System.out.println("***********taskOne************");
         Scanner input = new Scanner(System.in);
         System.out.println("Please write the date of month: ");
@@ -66,11 +69,11 @@ public class MyHomeWork {
 
 
     public static void taskTwo() {
-    System.out.println("***********taskTwo************");
-    Scanner input = new Scanner(System.in);
-    System.out.println("Please write the date of month: ");
-    int date = input.nextInt();
-        if (date >= 1 && date < 3){
+        System.out.println("***********taskTwo************");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please write the date of month: ");
+        int date = input.nextInt();
+        if (date >= 1 && date < 3) {
             System.out.println("I think its winter now!");
         } else if (date >= 3 && date <= 5) {
             System.out.println("I think its spring now!");
@@ -78,53 +81,53 @@ public class MyHomeWork {
             System.out.println("I think its summer now!");
         } else if (date >= 9 && date <= 11) {
             System.out.println("I think its autumn now!");
-        } else if(date == 12) {
+        } else if (date == 12) {
             System.out.println("I think its winter now!");
-        }else {
+        } else {
             System.out.println("Your data is wrong");
+        }
     }
-     }
 
-    public static void taskThree(){
+    public static void taskThree() {
         System.out.println("***********taskThree************");
         Scanner input = new Scanner(System.in);
         System.out.println("Please write your number");
         int num = input.nextInt();
-        if((num%2)==0){
+        if ((num % 2) == 0) {
             System.out.println("Number " + num + " is even ");
-        }
-        else {
+        } else {
             if ((num % 1) == 0) {
                 System.out.println("Number " + num + " is odd ");
 
 
             }
-        }    }
+        }
+    }
 
-    public static void taskFour(){
+    public static void taskFour() {
         System.out.println("***********taskFour************");
         Scanner input = new Scanner(System.in);
         System.out.println("Please write your temperature outside");
         int t = input.nextInt();
-        if(t > -5){
+        if (t > -5) {
             System.out.println("Its warm outside");
-        }else if (t >= -5 && t >= -20) {
+        } else if (t >= -5 && t >= -20) {
             System.out.println("Its normal outside");
-        }else if(t <= -20) {
+        } else if (t <= -20) {
             System.out.println("Its cold outside");
-        }else{
+        } else {
             System.out.println("Your data is wrong");
 
         }
 
     }
 
-    public static void taskFive(){
+    public static void taskFive() {
         System.out.println("***********taskFive************");
         Scanner input = new Scanner(System.in);
         System.out.println("Please write your number and i will tell you what color of the rainbow it is");
         String color = input.nextLine();
-        switch (color){
+        switch (color) {
             case "1":
                 System.out.println("This is the first color of the rainbow - red!");
                 break;
@@ -148,17 +151,71 @@ public class MyHomeWork {
                 break;
 
 
-
-
         }
 
 
     }
 
-    public static void taskSix(){
+    public static void loopOne() {
+
+        System.out.println("***********loopOne************");
+        for(int i = 1;i <= 99; i++) {
+            if (i % 2 != 0) {
+                System.out.println("Here are your odd numbers from 1 to 99: " + i);
+            }
+        }
+
+    }
+
+    public static void loopTwo() {
+        System.out.println("***********loopTwo************");
+        for(int i =5; i>=1; i--) {
+            System.out.println("Here is your numbers: " + i);
+        }
 
 
     }
+
+    public static void loopThree(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("***********loopThree************");
+        System.out.println("Please write the number: ");
+        int n = input.nextInt();
+
+        if (n <= 0) {
+
+            System.out.println("You write wrong number!");
+        } else {
+            int sum = 0;
+            for (int i = 1; i <= n; i++) {
+                sum += i;
+                System.out.println("Sum of numbers from 1 to " + n + "=" + sum);
+            }
+        }
+
+
+    }
+
+    public static void loopFour(){
+        System.out.println("***********loopFour************");
+        int i =7;
+        while(i<= 98){
+            System.out.println("here is your numbers: " + i);
+            i += 7;
+        }
+
+    }
+
+    public static void loopFive(){
+        System.out.println("***********loopFive************");
+        int i = 0;
+        while( i >= -45 ){
+            System.out.println("here is your number " + i);
+            i -= 5;
+        }
+    }
+
+
 
 }
 
