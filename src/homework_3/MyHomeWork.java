@@ -16,8 +16,8 @@ public class MyHomeWork {
         loopFour();
         loopFive();
         loopSix();
+        additionalTask();
     }
-
 
     public static void taskOne() {
         System.out.println("***********taskOne************");
@@ -206,6 +206,29 @@ public class MyHomeWork {
             int square = i*i;
             System.out.println("Squared " + i + " = " + square);
         }
+    }
+
+    public static void additionalTask(){
+        System.out.println("***********additionalTask************");
+        Scanner input = new Scanner(System.in);
+        System.out.println("This program will calculate your income based on the data you enter.");
+        System.out.print("Enter the deposit amount");
+        float money = input.nextFloat();
+        System.out.println("Enter the number of months for which you want to make a deposit");
+        int months = input.nextInt();
+        float percentRate = 7f;
+        float percentYearRate = percentRate / 12 / 100;
+        float result = money;
+        for (int i = 1; i <= months; i++) {
+            result += result * percentYearRate;
+        }
+        float income = result - money;
+        System.out.println("In " + months + " months, your income will be: " + income);
+
+
+
+
+
     }
 }
 
