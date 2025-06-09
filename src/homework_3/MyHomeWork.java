@@ -15,6 +15,7 @@ public class MyHomeWork {
         loopThree();
         loopFour();
         loopFive();
+        loopSix();
     }
 
 
@@ -63,7 +64,6 @@ public class MyHomeWork {
             case "0":
                 System.out.println("There is no such month");
                 break;
-
         }
     }
 
@@ -98,8 +98,6 @@ public class MyHomeWork {
         } else {
             if ((num % 1) == 0) {
                 System.out.println("Number " + num + " is odd ");
-
-
             }
         }
     }
@@ -117,9 +115,7 @@ public class MyHomeWork {
             System.out.println("Its cold outside");
         } else {
             System.out.println("Your data is wrong");
-
         }
-
     }
 
     public static void taskFive() {
@@ -149,11 +145,7 @@ public class MyHomeWork {
             case "7":
                 System.out.println("This is the seventh color of the rainbow - violet!");
                 break;
-
-
         }
-
-
     }
 
     public static void loopOne() {
@@ -164,7 +156,6 @@ public class MyHomeWork {
                 System.out.println("Here are your odd numbers from 1 to 99: " + i);
             }
         }
-
     }
 
     public static void loopTwo() {
@@ -172,8 +163,6 @@ public class MyHomeWork {
         for(int i =5; i>=1; i--) {
             System.out.println("Here is your numbers: " + i);
         }
-
-
     }
 
     public static void loopThree(){
@@ -181,7 +170,6 @@ public class MyHomeWork {
         System.out.println("***********loopThree************");
         System.out.println("Please write the number: ");
         int n = input.nextInt();
-
         if (n <= 0) {
 
             System.out.println("You write wrong number!");
@@ -192,8 +180,6 @@ public class MyHomeWork {
                 System.out.println("Sum of numbers from 1 to " + n + "=" + sum);
             }
         }
-
-
     }
 
     public static void loopFour(){
@@ -203,7 +189,6 @@ public class MyHomeWork {
             System.out.println("here is your numbers: " + i);
             i += 7;
         }
-
     }
 
     public static void loopFive(){
@@ -215,8 +200,13 @@ public class MyHomeWork {
         }
     }
 
-
-
+    public static void loopSix(){
+        System.out.println("***********loopSix************");
+        for(int i = 10; i <=20; i++){
+            int square = i*i;
+            System.out.println("Squared " + i + " = " + square);
+        }
+    }
 }
 
 
