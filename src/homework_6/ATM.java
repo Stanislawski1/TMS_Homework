@@ -55,10 +55,13 @@ public class ATM {
         if (card != null) {
             card.addCash(amount);
         } else {
+            card.takeCash(amount);
             System.out.println("This Card is not exist!");
 
-            card.takeCash(amount);
+
         }
+
+
     }
 
     public static void printAfterDeposit(CreditCard cards[]){
