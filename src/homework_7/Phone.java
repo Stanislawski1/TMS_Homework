@@ -87,7 +87,7 @@ public class Phone {
             System.out.println("Phone numbers" + (i + 1) + ": " + phones[i].getNumber());
         }
 
-        System.out.println("Messages");
+        System.out.println("***************Messages***************");
         phones[0].sendMessage("33-343-12-32", "29-654-18-22","29-900-29-67");
 
 
