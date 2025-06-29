@@ -1,0 +1,18 @@
+package homework_8.Employees;
+
+public class Director implements Employees {
+    private String name;
+    private String surName;
+    private String workExperience;
+
+    public Director(String name, String surName, String workExperience) {
+        this.name = name;
+        this.surName = surName;
+        this.workExperience = workExperience;
+    }
+
+    @Override
+    public void outputData() {
+        System.out.println("Director: " + name + surName + " Work experience " + workExperience);
+    }
+}
