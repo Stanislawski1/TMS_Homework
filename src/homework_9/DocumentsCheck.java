@@ -27,13 +27,13 @@ class DocumentNumberCheck {
 
     public static void check555Documents(String documentNumber) throws Start555Exception {
         if (!documentNumber.contains("555")) {
-            throw new Start555Exception("Error: Document number does not contain sequence '555'");
+            throw new Start555Exception("Error: Document number does not start with '555'");
         }
     }
 
     public static void check1a2bDocument(String documentNumber) throws End1a2bException {
         if (!documentNumber.contains("1a2b")) {
-            throw new End1a2bException("Error: Document number does not contain sequence '1a2b'");
+            throw new End1a2bException("Error: Document number does not end in '1a2b'");
         }
     }
 
